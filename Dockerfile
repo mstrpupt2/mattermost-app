@@ -13,4 +13,4 @@ RUN curl https://releases.mattermost.com/3.6.1/mattermost-3.6.1-linux-amd64.tar.
 # Copy in config
 # COPY config.json /opt/mattermost/config/
 
-#CMD ['start.sh']
+CMD ['start.sh']
