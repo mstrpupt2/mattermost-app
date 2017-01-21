@@ -5,8 +5,8 @@ MAINTAINER mstrpupt2
 RUN apt-get update -y
 
 # Install and move to correct dir
-RUN curl https://releases.mattermost.com/3.6.1/mattermost-3.6.1-linux-amd64.tar.gz && \
-    tar -xvzf mattermost*.gz && \
+RUN curl https://releases.mattermost.com/3.6.1/mattermost-3.6.1-linux-amd64.tar.gz
+RUN tar -xvzf mattermost*.gz && \
     mv mattermost /opt && \
     mkdir /opt/mattermost/data
     
