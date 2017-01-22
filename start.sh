@@ -1,3 +1,3 @@
 #!/bin/sh
 
-/.platform
+/opt/mattermost/bin/platform
