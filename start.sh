@@ -4,7 +4,7 @@ config=/mattermost/config/config.json
 DB_HOST=${DB_HOST:-db}
 DB_PORT_5432_TCP_PORT=${DB_PORT_5432_TCP_PORT:-5432}
 MM_USERNAME=${MM_USERNAME:-docker}
-MM_PASSWORD=${MM_PASSWORD:-mmuser_password}
+MM_PASSWORD=${MM_PASSWORD:-docker123}
 MM_DBNAME=${MM_DBNAME:-mattermost}
 echo -ne "Configure database connection..."
 if [ ! -f $config ]
