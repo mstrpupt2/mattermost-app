@@ -8,17 +8,15 @@ RUN apt-get update -y && \
 
 # Install and move to correct dir
 RUN wget https://releases.mattermost.com/3.6.1/mattermost-3.6.1-linux-amd64.tar.gz
-RUN tar -xvzf mattermost*.gz && \
-    mv mattermost /opt && \
-    mkdir /opt/mattermost/data
+RUN tar -xvzf mattermost*.gz
     
 # Copy in config
-COPY config.json /opt/mattermost/config/
+COPY config.json /
 
 # Copy in startup script
-COPY start.sh /opt/
-RUN chmod 755 /opt/start.sh
+COPY start.sh /
+RUN chmod 755 /start.sh
 
 EXPOSE 80
 
-CMD ['/opt/start.sh']
+ENTRYPOINT ['./start.sh']
