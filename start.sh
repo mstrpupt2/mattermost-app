@@ -9,7 +9,7 @@ MM_DBNAME=${MM_DBNAME:-mattermost}
 echo -ne "Configure database connection..."
 if [ ! -f $config ]
 then
-    cp /config.template.json $config
+    cp /config.json $config
     sed -Ei "s/DB_HOST/$DB_HOST/" $config
     sed -Ei "s/DB_PORT/$DB_PORT_5432_TCP_PORT/" $config
     sed -Ei "s/MM_USERNAME/$MM_USERNAME/" $config
