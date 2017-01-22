@@ -2,9 +2,9 @@ FROM ubuntu:16.04
 
 MAINTAINER mstrpupt2
 
-RUN apt-get install -y wget && \
-    apt-get update -y && \
-    apt-get upgrade -y
+RUN apt-get update -y && \
+    apt-get upgrade -y && \
+    apt-get install -y wget
 
 # Install and move to correct dir
 RUN wget https://releases.mattermost.com/3.6.1/mattermost-3.6.1-linux-amd64.tar.gz
