@@ -15,8 +15,7 @@ COPY config.json /
 
 # Copy in startup script
 COPY start.sh /
-RUN chmod 755 /start.sh
+RUN chmod +x /start.sh
+ENTRYPOINT ["/start.sh"]
 
 EXPOSE 80
-
-ENTRYPOINT ['./start.sh']
