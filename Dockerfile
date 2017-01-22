@@ -15,6 +15,10 @@ RUN tar -xvzf mattermost*.gz && \
 # Copy in config
 COPY config.json /opt/mattermost/config/
 
+# Copy in startup script
+COPY start.sh /
+RUN chmod 755 start.sh
+
 EXPOSE 80
 
-CMD ['/opt/mattermost/bin/platform']
+CMD ['./start.sh']
