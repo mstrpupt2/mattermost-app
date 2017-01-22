@@ -1,3 +1,4 @@
 #!/bin/sh
 
-/opt/mattermost/bin/platform
+CWD='opt/mattermost/bin'
+./platform
