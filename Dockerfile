@@ -18,7 +18,7 @@ RUN tar -xvzf mattermost*.gz
 RUN rm /mattermost/config/config.json
     
 # Copy in config
-COPY config.json /
+COPY config.json /mattermost/config/
 
 # Copy in startup script
 COPY start.sh /
