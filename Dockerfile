@@ -17,4 +17,6 @@ RUN tar -xvzf mattermost*.gz && \
 
 COPY start.sh /
 
+EXPOSE 80
+
 CMD ['/start.sh']
