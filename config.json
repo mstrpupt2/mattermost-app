@@ -61,7 +61,7 @@
     },
     "SqlSettings": {
         "DriverName": "postgres",
-        "DataSource": "postgres://mattermost-db:5432/mattermost?user=docker&password=docker123&sslmode=disable&connect_timeout=10",
+        "DataSource": "postgres://localhost:5432/mattermost?user=docker&password=docker123&sslmode=disable&connect_timeout=10",
         "DataSourceReplicas": [],
         "MaxIdleConns": 20,
         "MaxOpenConns": 300,
