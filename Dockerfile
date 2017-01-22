@@ -17,6 +17,4 @@ COPY config.json /opt/mattermost/config/
 
 EXPOSE 80
 
-WORKDIR /opt/mattermost/bin
-
-CMD ['./platform']
+CMD ['/opt/mattermost/bin/platform']
