@@ -5,14 +5,14 @@ MAINTAINER mstrpupt2
 # Update and add packages
 RUN apt-get update -y && \
     apt-get upgrade -y && \
-    apt-get install -y wget
+    apt-get install -y wget netcat
 
 # Create Data Dir
 RUN mkdir -p /mattermost/data
 
 # Install and move to correct dir
 RUN wget https://releases.mattermost.com/3.6.1/mattermost-3.6.1-linux-amd64.tar.gz
-RUN tar -xvz mattermost*.gz
+RUN tar -xvzf mattermost*.gz
 
 # Remove old config
 RUN rm /mattermost/config/config.json
