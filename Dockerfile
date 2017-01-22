@@ -15,4 +15,6 @@ RUN tar -xvzf mattermost*.gz && \
 # Copy in config
 # COPY config.json /opt/mattermost/config/
 
-CMD ['start.sh']
+COPY start.sh /
+
+CMD ['/start.sh']
