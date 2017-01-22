@@ -60,8 +60,8 @@
         "MaxNotificationsPerChannel": 1000
     },
     "SqlSettings": {
-        "DriverName": "mysql",
-        "DataSource": "mmuser:mostest@tcp(dockerhost:3306)/mattermost_test?charset=utf8mb4,utf8",
+        "DriverName": "postgres",
+        "DataSource": "postgres://mmuser:matterapp@localhost:5432/mattermost?sslmode=disable&connect_timeout=10",
         "DataSourceReplicas": [],
         "MaxIdleConns": 20,
         "MaxOpenConns": 300,
