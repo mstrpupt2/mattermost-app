@@ -11,7 +11,8 @@ RUN apt-get update -y && \
 RUN mkdir -p /mattermost/data
 
 # Install and move to correct dir
-RUN wget https://releases.mattermost.com/3.6.1/mattermost-3.6.1-linux-amd64.tar.gz | tar -xvz
+RUN wget https://releases.mattermost.com/3.6.1/mattermost-3.6.1-linux-amd64.tar.gz
+RUN tar -xvz mattermost*.gz
 
 # Remove old config
 RUN rm /mattermost/config/config.json
