@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 
 MAINTAINER mstrpupt2
 
-RUN apt-get update -y
+RUN apt-get update -y && apt-get upgrade -y && apt-get install -y curl
 
 # Install and move to correct dir
 RUN curl https://releases.mattermost.com/3.6.1/mattermost-3.6.1-linux-amd64.tar.gz
