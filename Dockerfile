@@ -1,5 +1,9 @@
 FROM ubuntu:17.04
 
+ENV MM_USERNAME mmuser
+ENV MM_PASSWORD mmuser_password
+ENV MM_DBNAME mattermost
+
 RUN apt-get update && \
     apt-get -y install curl netcat
 
