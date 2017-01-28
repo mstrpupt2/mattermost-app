@@ -61,7 +61,7 @@
     },
     "SqlSettings": {
         "DriverName": "postgres",
-        "DataSource": "postgres://0.0.0.0:5432/mattermost?user=test&password=test&sslmode=disable&connect_timeout=10",
+        "DataSource": "{{MATTERMOST_DATASOURCE}}",
         "DataSourceReplicas": [],
         "MaxIdleConns": 20,
         "MaxOpenConns": 300,
