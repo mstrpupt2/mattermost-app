@@ -1,7 +1,7 @@
 {
     "ServiceSettings": {
         "SiteURL": "",
-        "ListenAddress": ":8065",
+        "ListenAddress": ":80",
         "ConnectionSecurity": "",
         "TLSCertFile": "",
         "TLSKeyFile": "",
