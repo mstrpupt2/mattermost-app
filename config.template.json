@@ -38,15 +38,15 @@
         "RestrictCustomEmojiCreation": "all"
     },
     "TeamSettings": {
-        "SiteName": "Mattermost",
+        "SiteName": "Cara",
         "MaxUsersPerTeam": 50,
         "EnableTeamCreation": true,
         "EnableUserCreation": true,
         "EnableOpenServer": false,
         "RestrictCreationToDomains": "",
-        "EnableCustomBrand": false,
-        "CustomBrandText": "",
-        "CustomDescriptionText": "",
+        "EnableCustomBrand": true,
+        "CustomBrandText": "A friend to all whom whisper out loud",
+        "CustomDescriptionText": "Secure, Encrypted team communication and collaboration",
         "RestrictDirectMessage": "any",
         "RestrictTeamInvite": "all",
         "RestrictPublicChannelCreation": "all",
@@ -79,7 +79,7 @@
         "EnableDiagnostics": true
     },
     "PasswordSettings": {
-        "MinimumLength": 5,
+        "MinimumLength": 6,
         "Lowercase": false,
         "Number": false,
         "Uppercase": false,
